@@ -20,7 +20,7 @@ class Registration extends React.Component{
 	}
 	handleWent=(e)=>{
 		e.preventDefault()
-        axios.post("http://localhost:4005/add",
+        axios.post("https://register-backend.onrender.com/add",
             {name:this.state.name,
              passcode:this.state.passcode,
              email:this.state.email,
